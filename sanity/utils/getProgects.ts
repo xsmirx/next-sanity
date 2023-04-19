@@ -1,10 +1,10 @@
-import { createClient, groq } from "next-sanity";
-import { Project } from "@/types/Project";
+import {Project} from '@/types/Project';
+import {createClient, groq} from 'next-sanity';
 
 const getProjects = async (): Promise<Project[]> => {
   const client = createClient({
-    projectId: "gfrimnxu",
-    dataset: "production",
+    projectId: 'gfrimnxu',
+    dataset: 'production',
     useCdn: true,
   });
 
@@ -17,7 +17,7 @@ const getProjects = async (): Promise<Project[]> => {
        url,
        content
     }`);
-  
+
   return projects;
 };
 
