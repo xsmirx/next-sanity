@@ -10,7 +10,7 @@ const ProjectPage = async ({params}: Props) => {
   const project = await getProject(params.project);
 
   return (
-    <div className="mx-auto max-w-3xl py-20">
+    <div>
       <header className="flex items-center justify-between">
         <h1 className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent drop-shadow">
           {project.name}

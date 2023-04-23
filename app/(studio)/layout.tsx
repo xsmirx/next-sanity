@@ -1,8 +1,6 @@
-import './globals.css';
-
 export const metadata = {
   title: 'FreeCodeCamp next-sanity',
-  description: 'Learning project from FreeCodeCamp',
+  description: 'Learning project from FreeCodeCamp Next + Sanity',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
